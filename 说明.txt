@@ -1,0 +1,13 @@
+﻿文件夹不要改名字，打开VoiceRecognitionControlRobot 输入如下命令编译
+
+ gcc -o obj/voice.o -Iinclude -c src/voice.c
+
+ gcc -o bin/test -Iinclude obj/libmsc.so obj/voice.o src/main.c -lpthread -lwiringPi  -lrt -ldl -lpthread
+ 
+ 
+ 运行 sudo ./bin/test
+ 
+ 这个语音的识别触发是依靠树莓派的中断，百度搜索树莓派管脚图 ，当前文件夹有图片说明，这个管脚为高，开始识别
+ 可以在这个管脚加一个声音检测模块 （淘宝有），每次说话，输出高电平 就会触发中断，开启录音。
+
+
