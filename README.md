@@ -1,5 +1,12 @@
 # 该项目将进行重构，底层基于c\c++,上层封装出python，欢迎关注新项目主页。
 
+https://github.com/1158114251/VoiceAssistantOs
+
+
+
+
+
+
 
 
 
